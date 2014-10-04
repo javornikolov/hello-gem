@@ -22,10 +22,12 @@ Gem::Specification.new do |s|
     ".document",
     ".rspec",
     "Gemfile",
+    "Gemfile.lock",
     "LICENSE.txt",
     "README.rdoc",
     "Rakefile",
     "VERSION",
+    "hello-gem.gemspec",
     "lib/hello-gem.rb",
     "spec/hello-gem_spec.rb",
     "spec/spec_helper.rb"
@@ -41,18 +43,18 @@ Gem::Specification.new do |s|
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
       s.add_development_dependency(%q<rspec>, ["~> 3.1.0"])
       s.add_development_dependency(%q<bundler>, [">= 1.0"])
-      s.add_development_dependency(%q<jeweler>, ["~> 2.0.1"])
+      s.add_development_dependency(%q<jeweler>, [">= 0"])
       s.add_development_dependency(%q<simplecov>, [">= 0"])
     else
       s.add_dependency(%q<rspec>, ["~> 3.1.0"])
       s.add_dependency(%q<bundler>, [">= 1.0"])
-      s.add_dependency(%q<jeweler>, ["~> 2.0.1"])
+      s.add_dependency(%q<jeweler>, [">= 0"])
       s.add_dependency(%q<simplecov>, [">= 0"])
     end
   else
     s.add_dependency(%q<rspec>, ["~> 3.1.0"])
     s.add_dependency(%q<bundler>, [">= 1.0"])
-    s.add_dependency(%q<jeweler>, ["~> 2.0.1"])
+    s.add_dependency(%q<jeweler>, [">= 0"])
     s.add_dependency(%q<simplecov>, [">= 0"])
   end
 end
