@@ -12,7 +12,7 @@ Gem::Specification.new do |s|
   s.require_paths = ["lib"]
   s.authors = ["Yavor Nikolov"]
   s.date = "2014-10-04"
-  s.description = "TODO: longer description of your gem"
+  s.description = "Dummy app description"
   s.email = "nikolov.javor@gmail.com"
   s.extra_rdoc_files = [
     "LICENSE.txt",
@@ -35,7 +35,7 @@ Gem::Specification.new do |s|
   s.homepage = "http://github.com/javornikolov/hello-gem"
   s.licenses = ["MIT"]
   s.rubygems_version = "2.2.2"
-  s.summary = "TODO: one-line summary of your gem"
+  s.summary = "Dummy app"
 
   if s.respond_to? :specification_version then
     s.specification_version = 4
