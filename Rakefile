@@ -37,6 +37,11 @@ task :simplecov do
   Rake::Task['spec'].execute
 end
 
+RSpec::Core::RakeTask.new(:rcov) do |t|
+  t.rcov = true
+  t.rcov_opts =  ['--exclude', '/Library,spec/']
+end
+
 task :default => :spec
 
 require 'rdoc/task'
