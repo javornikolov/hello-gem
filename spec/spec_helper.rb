@@ -7,7 +7,7 @@ module SimpleCov::Configuration
 end
 
 SimpleCov.configure do
-  clean_filters
+  load_profile 'root_filter'
   load_profile 'test_frameworks'
 end
 
